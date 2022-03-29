@@ -1,5 +1,7 @@
 const form = FormApp.getActiveForm();
 
+const mappings = {};
+
 function onSubmit() {
   const response = {};
   const formResponse = form.getResponses().slice(-1).pop();
@@ -10,11 +12,14 @@ function onSubmit() {
     const titleResponse = itemResponse.getItem().getTitle();
     const answerResponse = itemResponse.getResponse();
 
-    if (!titleResponse.includes("PDPA"))
+    if (!titleResponse.includes('PDPA'))
       response[titleResponse] = answerResponse;
   }
 
-  Logger.log(response);
+  return normalize(response);
 }
 
-function normalize(data: Record<string, string>) {}
+function normalize(response: Record<string, string>) {
+  const data = Object.keys(response);
+  Logger.log(data);
+}
