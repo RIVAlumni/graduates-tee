@@ -9,6 +9,7 @@
   "license": "MIT",
   "scripts": {
     "login": "clasp login",
+    "open": "clasp open",
     "pull": "clasp pull 1zUcgjLynp5S4hHn7Py_xyTXMEYWPHIH32-lLM_gq6Yt_xliw8DvbwgVV",
     "push": "clasp push"
   },
