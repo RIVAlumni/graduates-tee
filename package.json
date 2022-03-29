@@ -1,0 +1,19 @@
+{
+  "private": false,
+  "name": "graduates-tee",
+  "description": "Backend code for the automatic processing of form submissions and document generation.",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/RIVAlumni/graduates-tee",
+  "author": "Aaron Teo <aaron.teo@riv-alumni.com>",
+  "license": "MIT",
+  "scripts": {
+    "login": "clasp login",
+    "pull": "clasp pull 1zUcgjLynp5S4hHn7Py_xyTXMEYWPHIH32-lLM_gq6Yt_xliw8DvbwgVV",
+    "push": "clasp push"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.45"
+  }
+}
